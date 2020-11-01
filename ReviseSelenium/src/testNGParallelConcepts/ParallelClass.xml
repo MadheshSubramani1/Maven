@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="parallel Class suite" verbose="10" parallel="classes" thread-count="2">
+
+	<test name="parallel class test">
+
+		<classes>
+
+			<class name="testNGParallelConcepts.Parallelclass1" />
+			<class name="testNGParallelConcepts.ParallelClass2" />
+			<class name="testNGParallelConcepts.ParallelClass3" />
+		</classes>
+
+	</test>
+</suite>

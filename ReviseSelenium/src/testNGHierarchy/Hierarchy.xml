@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="test suite">
+	<test name="test Cases">
+
+		<classes>
+
+			<class name="testNGHierarchy.TestNgHierachy1" />
+			<class name="testNGHierarchy.TestNgHierarchy2" /> <!-- before class example -->
+		</classes>
+	</test>
+	<!-- <test name="test Cases 2">
+
+		<classes>
+
+
+			<class name="testNGHierarchy.TestNgHierarchy2" /> <!--  before test example -->
+		</classes>
+	</test> -->
+</suite>

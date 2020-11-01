@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="parallel Method suite" verbose="5" parallel="methods"
+	thread-count="2">
+	<test name="parallel Method test">
+		<classes>
+
+			<class name="testNGParallelConcepts.ParallelMethod" />
+		</classes>
+	</test>
+</suite>

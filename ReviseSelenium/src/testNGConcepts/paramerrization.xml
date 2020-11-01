@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Check Parameterrization">
+
+	<test name="parametrization Tets">
+		<parameter name="Name" value="Madhesh"></parameter>
+		<parameter name="UserName" value="madhesh9741@gmail.com" />
+		<parameter name="Password" value="12345678Ma" />
+
+		<classes>
+
+			<class name="testNGConcepts.ParameterizationEaxmple">
+
+			</class>
+		</classes>
+
+	</test>
+
+</suite>

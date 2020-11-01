@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2611" started-at="2020-10-26T20:05:43 IST" finished-at="2020-10-26T20:05:46 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2611" started-at="2020-10-26T20:05:43 IST" finished-at="2020-10-26T20:05:46 IST">
+      <class name="APIAutomationUsingJava.net.DeleteMethodUsingJava">
+        <test-method status="PASS" signature="postMethod()[pri:0, instance:APIAutomationUsingJava.net.DeleteMethodUsingJava@5a8806ef]" name="postMethod" duration-ms="960" started-at="2020-10-26T20:05:43 IST" finished-at="2020-10-26T20:05:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postMethod -->
+        <test-method status="PASS" signature="PutMethos()[pri:1, instance:APIAutomationUsingJava.net.DeleteMethodUsingJava@5a8806ef]" name="PutMethos" duration-ms="806" started-at="2020-10-26T20:05:44 IST" finished-at="2020-10-26T20:05:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PutMethos -->
+        <test-method status="PASS" signature="DeleteMethos()[pri:2, instance:APIAutomationUsingJava.net.DeleteMethodUsingJava@5a8806ef]" name="DeleteMethos" duration-ms="790" started-at="2020-10-26T20:05:45 IST" finished-at="2020-10-26T20:05:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteMethos -->
+      </class> <!-- APIAutomationUsingJava.net.DeleteMethodUsingJava -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
