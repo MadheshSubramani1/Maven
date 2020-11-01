@@ -1,0 +1,11 @@
+package DataDriven;
+
+import org.testng.annotations.Test;
+
+public class BothCorrect {
+
+	@Test
+	public static void Both_Correct() {
+
+	}
+}

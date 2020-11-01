@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;selenium_learning&apos;&#x0D;&#x0A;- Original project: &apos;selenium_learning&apos;&#x0D;&#x0A;- Original element: &apos;ddc44fe4-9331-4c06-a723-c23ff651f3b2&apos;" description="Delete element" element1="ddc44fe4-9331-4c06-a723-c23ff651f3b2" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1579680136004" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,2 @@
+[1030/185130.843:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\VIKASA\AppData\Local\Temp\scoped_dir7300_1832582287\Crashpad\attachments\2c3c3438-2126-46fc-a4ee-3895877b5019: The system cannot find the path specified. (0x3)
+[1031/073105.195:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

@@ -1,0 +1,25 @@
+package advancedConcepts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WorkingwithFrames {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver=new ChromeDriver();
+		
+		driver.get("http://www.leafground.com/pages/frame.html");
+		
+		WebElement frame1=driver.findElement(By.xpath("//*[@id=\"wrapframe\"]/iframe"));
+		
+		driver.switchTo().frame(frame1);
+		
+		WebElement clickButton=driver.findElement(By.id("Click"));
+		clickButton.click();
+		
+	}
+
+}

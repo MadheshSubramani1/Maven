@@ -1,0 +1,28 @@
+package javaInterviewQuestions;
+
+public class PrintDuplicateElementFromStringArray {
+	
+	static String[] names= {"java", "c","Phython", "Ruby", "PHP", "java"};
+	
+	
+	public static void usingForLoop() {
+		
+		for(int i=0;i<names.length;i++) {
+			
+			for(int j=i+1;j<names.length;j++) {
+				
+				if (names[i].equals(names[j])) {
+					
+					System.out.println("Duplicate Element is : "+names[i]);
+				}
+			}
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		usingForLoop();
+
+	}
+
+}

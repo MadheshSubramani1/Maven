@@ -1,0 +1,26 @@
+package testNGConcepts;
+
+import org.testng.annotations.Test;
+
+public class DependencyConcept {
+
+	@Test
+	public void highSchool() {
+
+		System.out.println("High School");
+
+	}
+
+	@Test
+	public void higherSecondary() {
+		System.out.println("Highe sec School");
+
+	}
+
+	@Test
+	public void college() {
+
+		System.out.println("Engineering");
+	}
+
+}

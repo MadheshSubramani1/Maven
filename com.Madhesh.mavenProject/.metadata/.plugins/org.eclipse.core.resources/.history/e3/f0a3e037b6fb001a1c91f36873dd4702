@@ -1,0 +1,37 @@
+package testNGConcepts;
+
+import org.testng.annotations.Test;
+
+public class UsingPriority {
+
+	@Test
+	public void startTheCar() {
+
+		System.out.println("Start The Car");
+	}
+
+	@Test
+	public void putFirstGear() {
+
+		System.out.println("First Car");
+	}
+
+	@Test
+	public void putSecondGear() {
+
+		System.out.println("Second Car");
+	}
+
+	@Test
+	public void putThirdGear() {
+
+		System.out.println("Third Car");
+	}
+
+	@Test
+	public void putFourthGear() {
+
+		System.out.println("Fourth Car");
+	}
+
+}

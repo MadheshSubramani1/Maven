@@ -1,0 +1,37 @@
+package javascriptExecutorJS;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import Utill.UtillJS;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://www.facebook.com/");
+		WebElement signUpButton=driver.findElement(By.id("loginbutton"));
+
+		//UtillJS.Flash(signUpButton, driver);
+		//UtillJS.borderJs(signUpButton, driver);
+		//String title=UtillJS.titleJs(driver);
+		//System.out.println(title);
+		
+		//UtillJS.clickJs(signUpButton, driver);
+		
+
+		UtillJS.alertJs("This is Home page", driver);
+	
+		//driver.quit();
+		
+		
+		
+	}
+}

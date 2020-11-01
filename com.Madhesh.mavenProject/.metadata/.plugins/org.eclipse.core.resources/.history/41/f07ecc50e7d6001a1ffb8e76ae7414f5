@@ -1,0 +1,51 @@
+package advancedConcepts;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class UploadFilesExample {
+
+	public static void main(String[] args) throws AWTException, InterruptedException {
+
+		System.setProperty("webdriver.chrome.silentOutput", "true");
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+
+		driver.get("http://www.leafground.com/pages/upload.html");
+
+		WebElement uploadButton = driver.findElement(By.name("filename"));
+
+		Thread.sleep(1000);
+
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click()", uploadButton);
+
+		Thread.sleep(1000);
+		StringSelection selction = new StringSelection("C:\\Users\\VIKASA\\Downloads\\testleaf.txt");
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents( null, selction);
+
+		Robot robot = new Robot();
+
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+
+	}
+
+}

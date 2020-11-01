@@ -1,0 +1,40 @@
+package DataDriven;
+
+import java.io.FileInputStream;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class LoginTestUsingExcel {
+	
+	
+	public static void getExcelData() {
+		
+		FileInputStream inputStream=new FileInputStream("C:\\Users\\VIKASA\\eclipse-workspace"
+				+ "\\ReviseSelenium\\src\\DataDriven\\Login data.xls")
+		
+	}
+
+	@DataProvider(name = "loginData")
+	public static String[][] logindata() {
+		String[][] data = null;
+		return data;
+	}
+
+	@Test(dataProvider = "loginData")
+	public static void Both_Correct(String uname, String pwd) {
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+
+		driver.findElement(By.id("txtUsername")).sendKeys(uname);
+		driver.findElement(By.id("txtPassword")).sendKeys(pwd);
+
+		driver.findElement(By.id("btnLogin")).click();
+
+		driver.quit();
+	}
+}

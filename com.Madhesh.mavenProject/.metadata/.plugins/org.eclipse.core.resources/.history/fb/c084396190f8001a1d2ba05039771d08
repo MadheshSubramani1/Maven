@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CRM Login test">
+	<test name="Both Incorrect">
+		<classes>
+
+			<class name="DataDriven.BothIncorrect"></class>
+	
+		</classes>
+	</test>
+	
+	<test name="Wrong Password">
+		<classes>
+
+			
+			<class name="DataDriven.WrongPassword"></class>
+			
+		</classes>
+	</test><test name="Wrong User Name">
+		<classes>
+
+			
+			<class name="DataDriven.WrongUserName"></class>
+		
+		</classes>
+	</test><test name="Both Correct">
+		<classes>
+			<class name="DataDriven.BothCorrect"></class>
+		</classes>
+	</test>
+</suite>

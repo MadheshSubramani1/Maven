@@ -1,0 +1,22 @@
+package chromeAndFireFoxOptions;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class ChromeOptionToDownloadTheWord {
+
+	public static void main(String[] args) {
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--disable-extensions");
+
+		WebDriver driver = new ChromeDriver(options);
+
+		driver.get("http://www.leafground.com/pages/download.html");
+
+		driver.findElement(By.linkText("Download Text")).click();
+	}
+
+}

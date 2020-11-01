@@ -1,0 +1,31 @@
+package DataDriven;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class LoginTest {
+
+	@DataProvider(name = "loginData")
+	public static void logindata() {
+
+		String[][] data = { { "Dummy", "dummy" }, { "Admin", "dummy" }, { "dummy", "admin123" },
+				{ "Admin", "admin123" } };
+	}
+
+	@Test(dataProvider = "loginData")
+	public static void Both_Correct(String uname, String pwd) {
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+
+		driver.findElement(By.id("txtUsername")).sendKeys(uname);
+		driver.findElement(By.id("txtPassword")).sendKeys(pwd);
+
+		driver.findElement(By.id("btnLogin")).click();
+
+		driver.quit();
+	}
+}

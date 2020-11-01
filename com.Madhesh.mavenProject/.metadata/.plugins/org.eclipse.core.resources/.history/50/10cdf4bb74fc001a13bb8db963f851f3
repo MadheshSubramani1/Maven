@@ -1,0 +1,42 @@
+package testNGConcepts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class UsingBeforeAndAfterSuite {
+
+	WebDriver driver;
+	long startTime;
+	long endTime;
+	public void launchTheBrowser() {
+
+		startTime = System.currentTimeMillis();
+		driver = new ChromeDriver();
+	}
+
+	public void openGoogle() {
+
+		driver.get("https://www.google.com");
+
+	}
+
+	public void openBing() {
+
+		driver.get("https://www.bing.com");
+	}
+
+	public void openYahoo() {
+
+		driver.get("https://www.yahoo.com");
+
+	}
+	
+	public void closeBrowser() {
+		
+		driver.quit();
+		
+		endTime=System.currentTimeMillis();
+		long totalTime=endTime-startTime;
+			
+	}
+}

@@ -1,0 +1,31 @@
+package chromeAndFireFoxOptions;
+
+import java.util.HashMap;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class ChromeOptionToDownloadTheWord {
+
+	public static void main(String[] args) {
+
+		HashMap<String, Object> chromeOptionsMap = new HashMap<String, Object>();
+
+		chromeOptionsMap.put("plugins.plugins_disabled", new String[] { "Chrome txt Viewer" });
+		chromeOptionsMap.put("plugins.always_open_txt_externally", true);
+		chromeOptionsMap.put("download.default_directory", "C:\\Users\\VIKASA\\Desktop\\sample");
+
+		ChromeOptions options = new ChromeOptions();
+
+		options.setExperimentalOption("prefs", chromeOptionsMap);
+
+		WebDriver driver = new ChromeDriver(options);
+
+		driver.get("http://www.leafground.com/pages/download.html");
+
+		driver.findElement(By.linkText("Download Text")).click();
+	}
+
+}
