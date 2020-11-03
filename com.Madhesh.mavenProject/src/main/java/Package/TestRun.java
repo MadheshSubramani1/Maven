@@ -14,9 +14,12 @@ public class TestRun {
 
 		List<String> suitePath = new ArrayList<String>();
 
-		// suitePath.add(System.getProperty("user.dir") + "\\TestNG.xml");
+		if (suitePath.add(System.getProperty("user.dir") + "\\TestNG.xml"))
+			;
+		// if
+		// (suitePath.add("C:\\Users\\VIKASA\\git\\Maven\\com.Madhesh.mavenProject\\TestNG.xml"));
 
-		suitePath.add("src/test/java/TestNG.xml");
+		else if (suitePath.add("./classes/Package/TestRun.class"))
 
 		testNG.setTestSuites(suitePath);
 
